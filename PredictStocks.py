@@ -22,8 +22,8 @@ def load_model(stock_choice):
         model_path = 'Model/Model_BBRI_LSTMSentiment1k_Architecture.keras'
         weight_path = 'Model/model_lstm_bbri_sentiment1k.weights.h5'
     elif stock_choice == 'BBCA':
-        model_path = 'Model/Model_BBCA_LSTMSentiment1e_Architecture.keras'
-        weight_path = 'Model/model_lstm_bbca_sentiment1e.weights.h5'
+        model_path = 'Model_BBCA_LSTMSentiment1e_Architecture.keras'
+        weight_path = 'model_lstm_bbca_sentiment1e.weights.h5'
     else:
         raise ValueError("Invalid stock choice")
 
