@@ -10,20 +10,20 @@ def expand_dims_custom(x):
 # Function to load the correct model and weights based on stock selection
 def load_model(stock_choice):
     if stock_choice == 'ASII':
-        model_path = '/Users/natashahw/Downloads/Deployment/Model_ASII_LSTMSentiment1e_Architecture.keras'
-        weight_path = '/Users/natashahw/Downloads/Deployment/model_lstm_asii_sentiment1e.weights.h5'
+        model_path = '/Model/Model_ASII_LSTMSentiment1e_Architecture.keras'
+        weight_path = '/Model/model_lstm_asii_sentiment1e.weights.h5'
     elif stock_choice == 'BMRI':
-        model_path = '/Users/natashahw/Downloads/Deployment/Model_BMRI_LSTMSentiment2a_Architecture.keras'
-        weight_path = '/Users/natashahw/Downloads/Deployment/model_lstm_bmri_sentiment2a.weights.h5'
+        model_path = '/Model/Model_BMRI_LSTMSentiment2a_Architecture.keras'
+        weight_path = '/Model/model_lstm_bmri_sentiment2a.weights.h5'
     elif stock_choice == 'TLKM':
-        model_path = '/Users/natashahw/Downloads/Deployment/Model_TLKM_LSTMSentiment2f_Architecture.keras'
-        weight_path = '/Users/natashahw/Downloads/Deployment/model_lstm_tlkm_sentiment2f.weights.h5'
+        model_path = '/Model/Model_TLKM_LSTMSentiment2f_Architecture.keras'
+        weight_path = '/Model/model_lstm_tlkm_sentiment2f.weights.h5'
     elif stock_choice == 'BBRI':
-        model_path = '/Users/natashahw/Downloads/Deployment/Model_BBRI_LSTMSentiment1k_Architecture.keras'
-        weight_path = '/Users/natashahw/Downloads/Deployment/model_lstm_bbri_sentiment1k.weights.h5'
+        model_path = '/Model/Model_BBRI_LSTMSentiment1k_Architecture.keras'
+        weight_path = '/Model/model_lstm_bbri_sentiment1k.weights.h5'
     elif stock_choice == 'BBCA':
-        model_path = '/Users/natashahw/Downloads/Deployment/Model_BBCA_LSTMSentiment1e_Architecture.keras'
-        weight_path = '/Users/natashahw/Downloads/Deployment/model_lstm_bbca_sentiment1e.weights.h5'
+        model_path = '/Model/Model_BBCA_LSTMSentiment1e_Architecture.keras'
+        weight_path = '/Model/model_lstm_bbca_sentiment1e.weights.h5'
     else:
         raise ValueError("Invalid stock choice")
 
